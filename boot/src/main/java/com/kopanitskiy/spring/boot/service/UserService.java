@@ -1,18 +1,18 @@
 package com.kopanitskiy.spring.boot.service;
 
-
 import com.kopanitskiy.spring.boot.model.User;
 
 import java.util.List;
 
 public interface UserService {
-    public List<User> getAllUsers();
+    public List<User> getAll();
 
-    public void saveUser(User user);
+    public void save(User user);
 
-    public User getUserById(Long id);
+    public User getById(Long id);
 
-    public void deleteUser(Long id);
+    public void deleteById(Long id);
 
-    public void updateUser(Long id, User userUpdate);
+    public void update(Long id, User userUpdate);
 }
+
